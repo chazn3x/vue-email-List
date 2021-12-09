@@ -1,0 +1,9 @@
+#root {
+    background: #00aaff;
+    border-radius: 1rem;
+}
+li div {
+    background: #fff;
+    border-radius: .5rem;
+    width: 50%;
+}

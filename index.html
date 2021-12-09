@@ -14,10 +14,16 @@
 </head>
 <body>
     
-    <div id="root">
-        <ul v-if="mailList.length == 10">
-            <li v-for="mail in mailList">
-                {{mail}}
+    <div id="root" class="w-50 mx-auto my-2">
+        <h1 class="text-center p-2">Account generator</h1>
+        <div class="flex justify-around">
+            <h2>User</h2>
+            <h2>Password</h2>
+        </div>
+        <ul v-if="mailList.length == 10" class="p-2">
+            <li v-for="user in mailList" class="my-1 flex">
+                <div class="px-1 py-05 me-1">{{user.mail}}</div>
+                <div class="px-1 py-05 ms-1">{{user.psw}}</div>
             </li>
         </ul>
     </div>
